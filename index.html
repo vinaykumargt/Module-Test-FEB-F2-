@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--This is static header-->
+    <div class="header">
+      <h2>Blogging Website</h2>
+      <button id="create-blog-btn">Create New Post</button>
+    </div>
+
+    <!--This is the blog model form -->
+    <div id="modal">
+      <div id="modal-content">
+        <span id="close-btn">&times;</span>
+        <form>
+          <h2>Create a Post</h2>
+          <input
+            type="text"
+            id="blog-title"
+            name="blog-title"
+            placeholder="Enter Your heading...."
+          /><br />
+          <textarea
+            id="blog-description"
+            name="blog-description"
+            placeholder="Enter Your Blog Post...."
+          ></textarea
+          ><br />
+          <div class="stylebtn">
+            <button id="save-btn">Publish Post</button>
+            <button id="cancel-btn">Cancel Post</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    
+    <!--This the main section for the blog posts-->
+    <div id="blog-posts"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
